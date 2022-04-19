@@ -23,6 +23,7 @@ def predict_home_price():
     response = jsonify({
         'estimated_price': util.get_estimated_price(location, total_sqft, bhk, bath)
     })
+    response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 
