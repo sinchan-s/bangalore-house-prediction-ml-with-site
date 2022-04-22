@@ -1,3 +1,5 @@
 .idea
 server/__pycache__
 model/.ipynb_checkpoints
+venv
+
